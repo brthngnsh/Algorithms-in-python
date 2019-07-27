@@ -10,12 +10,18 @@ class listnode :
     def __init__(self,data=0,nextnode = None):
         self.data=data
         self.next = nextnode
+      
+        
     def getdata(self,data):
         self.data = data
+        
+        
     def getnext(self,nextnode):
         self.next = nextnode
 
 class Singlelylinked():
+    #This class is created for head node creation
+    #Using head nodes while creating a list will be helpful while debugging
     def __init__(self):
         self.head = None
         
