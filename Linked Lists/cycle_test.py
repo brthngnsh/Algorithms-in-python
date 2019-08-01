@@ -1,3 +1,10 @@
+
+"""
+Created on Thu Aug 1 19:34:38 2019
+
+@author: PlagueDoctor
+"""
+
 def cycletest(head):
     def cycle_len(end):
         start , step = end , 0
