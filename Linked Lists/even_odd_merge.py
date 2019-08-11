@@ -1,5 +1,5 @@
 # This program reorders the nodes by placing the 
-# even indexed nodes at the beginning fo;;owed
+# even indexed nodes at the beginning followed
 # by the odd indexed nodes
 
 class ListNode:
@@ -27,8 +27,9 @@ def even_odd_merge(L) :
     while L :
         tails[turn].next = L
         L = L.next
-        turn ^= 1
         tails[turn] = tails[turn].next
+        turn ^= 1
+        
     tails[1].next = None
     tails[0].next = odd_dummy
     return even_dummy.next
