@@ -43,13 +43,13 @@ def reversing (L, start , finish) :
 
 def main() :
     L = SingleList()
-    n = int(input('Enter no of nodes : '))
+    cou = int(input('Enter no of nodes : '))
     #cur is used to keep track of final element
     #and also for traversal
     cur = L.head
     while cur != None :
         cur = cur.next
-    for _ in range(n) :
+    for _ in range(cou) :
         if L.head == None :
             #this runs if linked list contains no elements
             n = ListNode()
@@ -66,7 +66,7 @@ def main() :
         print('user entered input : ')
     L.print_data()
     print('\n\n')
-    L.head = reversing(L.head,1,3)
+    L.head = reversing(L.head,1,4)
     L.print_data()
     
     
