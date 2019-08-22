@@ -17,11 +17,11 @@ def list_add(L1 , L2) :
     cur_pointer = dummy_head = ListNode()
     carry = 0
     while L1 or L2 or carry :
-        value = (L1.data if L1 else 0) + (L2.data if L2 else 0)
+        value = (L1.data if L1 else 0) + (L2.data if L2 else 0) + carry
         L1 = L1.next if L1 else None
         L2 = L2.next if L2 else None
-        cur_pointer.next = ListNode(value % 10)
-        carry , cur_pointer = value // 10 , cur_pointer.next 
+        cur_pointer.next = ListNode(value // 10)
+        carry , cur_pointer = value % 10 , cur_pointer.next 
     return dummy_head.next 
 
 def main() :
