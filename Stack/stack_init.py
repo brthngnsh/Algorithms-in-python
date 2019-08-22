@@ -1,5 +1,5 @@
 #This file contains only Stack initialization
-
+#it implements stack eith max API
 import collections
 class Stack :
     ElementWithCachedMax = collections.namedtuple('ElementWithCachedMax',('element','max'))
