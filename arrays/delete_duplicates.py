@@ -15,3 +15,5 @@ def delete_duplicate(A):
             A[write_index]=A[i]
     del A[write_index+1:]
     return A
+x=delete_duplicate([1,1,2,2,3])
+print(x)

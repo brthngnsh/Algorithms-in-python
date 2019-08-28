@@ -10,3 +10,10 @@ def int_to_string(x):
             break
     return ('-' if is_negative else '')+''.join(reversed(s))
     
+
+def main() :
+    number = int(input())
+    print(int_to_string(number))
+
+if __name__ == '__main__' :
+    main()
