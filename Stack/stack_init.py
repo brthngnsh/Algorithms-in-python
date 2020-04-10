@@ -21,5 +21,5 @@ class Stack :
         return self._element_with_cached_max.pop().element
 
     def push(self,x):
-        self._element_with_cached_max.append(self._element_with_cached_max(x,x if self.empyt() else max(x,self.max())))
+        self._element_with_cached_max.append(self._element_with_cached_max(x,x if self.empty() else max(x,self.max())))
 
